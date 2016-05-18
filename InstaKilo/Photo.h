@@ -6,8 +6,14 @@
 //  Copyright © 2016 Anton Moiseev. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Photo : NSObject
+
+@property (strong, nonatomic) UIImage *image;
+
+@property (strong, nonatomic) NSString *type;
+
+- (instancetype)initWithImage:(UIImage *)image type:(NSString *)type;
 
 @end

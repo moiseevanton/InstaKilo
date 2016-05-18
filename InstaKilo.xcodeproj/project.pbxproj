@@ -13,6 +13,8 @@
 		E93724511CECB6D3005106BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E937244F1CECB6D3005106BD /* Main.storyboard */; };
 		E93724531CECB6D3005106BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93724521CECB6D3005106BD /* Assets.xcassets */; };
 		E93724561CECB6D3005106BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93724541CECB6D3005106BD /* LaunchScreen.storyboard */; };
+		E937245F1CECB771005106BD /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E937245E1CECB771005106BD /* PhotoCell.m */; };
+		E96A13851CECCAB80098F94A /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A13841CECCAB80098F94A /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E93724521CECB6D3005106BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E93724551CECB6D3005106BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E93724571CECB6D3005106BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E937245D1CECB771005106BD /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		E937245E1CECB771005106BD /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		E96A13831CECCAB80098F94A /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		E96A13841CECCAB80098F94A /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				E93724541CECB6D3005106BD /* LaunchScreen.storyboard */,
 				E93724571CECB6D3005106BD /* Info.plist */,
 				E93724461CECB6D3005106BD /* Supporting Files */,
+				E937245D1CECB771005106BD /* PhotoCell.h */,
+				E937245E1CECB771005106BD /* PhotoCell.m */,
+				E96A13831CECCAB80098F94A /* Photo.h */,
+				E96A13841CECCAB80098F94A /* Photo.m */,
 			);
 			path = InstaKilo;
 			sourceTree = "<group>";
@@ -149,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E937245F1CECB771005106BD /* PhotoCell.m in Sources */,
 				E937244E1CECB6D3005106BD /* ViewController.m in Sources */,
 				E937244B1CECB6D3005106BD /* AppDelegate.m in Sources */,
+				E96A13851CECCAB80098F94A /* Photo.m in Sources */,
 				E93724481CECB6D3005106BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +276,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaKilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moiseevanton.InstaKilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaKilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moiseevanton.InstaKilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +314,7 @@
 				E937245C1CECB6D3005106BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
